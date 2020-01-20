@@ -47,7 +47,6 @@ public class HireTestSuite {
 
         Optional<Hire> optionalHire = hireRepository.findById(hire.getId());
 
-
         //Then
         Assert.assertTrue(optionalHire.isPresent());
         Assert.assertNotEquals(Optional.of(0), optionalHire.get().getId());
